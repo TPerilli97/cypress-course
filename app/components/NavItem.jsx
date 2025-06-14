@@ -1,8 +1,8 @@
 import Link from "next/link"
 
-export default function NavItem({label,path}){
+export default function NavItem({label,path, DataTest}) {
     return (
-        <Link href={path}>
+        <Link href={path} data-test={DataTest}>
             {label}
         </Link>
     )
